@@ -731,7 +731,7 @@ const server = http.createServer((req, res) => {
 
 if (require.main === module) {
     server.listen(PORT, "0.0.0.0", () => {
-        console.log(`🦇 NVR Server running at http://192.168.1.172:${PORT}`);
+        console.log(`🦇 NVR Server running at http://127.0.0.1:${PORT}`);
         console.log(`- Humans navigating via browser get the Web UI`);
         console.log(`- Bots/GET requests get direct JSON API answers`);
         console.log(`- Methods: nvr (default), gzip, brotli, deflate, store, auto`);
